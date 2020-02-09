@@ -1,17 +1,13 @@
-<html>
-  <head>
-    <title>veselllov's blog</title>
-  </head>
-  <body>
-        <div>
-            <h1><a href="/">Весёлый блог</a></h1>
-        </div>
+{% extends 'blog/base.html' %}
+
+{% block content %}
         {% for post in posts %}
-        <div>
-            <p>Опубликовано: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-        {% endfor %}
-    </body>
-</html>
+            <div class="post">
+              <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+              <p>{{ post.text|linebreaksbr }}</p>
+              <div class="date">
+                <p>Опубликовано: {{ post.published_date }}</p>
+              </div>
+            </div>
+          {% endfor %}
+{% endblock %}

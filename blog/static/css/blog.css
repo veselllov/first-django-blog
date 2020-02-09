@@ -1,0 +1,63 @@
+body {
+    background-color: #f0f0f0;
+  }
+
+header {
+  background: #ff8585; /* Для старых браузров */
+  background: linear-gradient(to top left, #ff8585, #ff8be4);
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+h1 a {
+  color: white;
+  font-size: 80;
+  font-weight: 600;
+  font-family: 'Prata', serif;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+    color: white;
+}
+
+.content {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Prata', serif;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
